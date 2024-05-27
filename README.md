@@ -1,3 +1,3 @@
-# ALX-FRONTEND-JAVASCRIPT
+# ALX FRONTEND JAVASCRIPT
 
-This repo contains projects for learning Frontend development concepts with JavaScript.
+This repo contains projects for learning frontend development concepts with __JavaScript__.
