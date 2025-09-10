@@ -22,5 +22,5 @@ function printTeacher({
   firstName: string;
   lastName: string;
 }): string {
-  return `${firstName}. ${lastName}`;
+  return `${firstName[0]}. ${lastName}`;
 }
