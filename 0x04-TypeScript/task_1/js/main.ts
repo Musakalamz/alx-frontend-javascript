@@ -19,16 +19,6 @@ interface printTeacherFunction {
 }
 
 // Function implementation (must be a function declaration, not arrow)
-// function printTeacher({
-//   firstName,
-//   lastName,
-// }: {
-//   firstName: string;
-//   lastName: string;
-// }): string {
-//   return `${firstName}. ${lastName}`;
-// }
-
 function printTeacher(firstName: string, lastName: string): string {
   const teacher = { firstName, lastName }; // <-- this gives us { firstName, lastName }
   return `${firstName[0]}. ${lastName}`;
