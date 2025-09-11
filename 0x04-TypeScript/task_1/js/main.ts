@@ -5,12 +5,7 @@ interface Teacher {
   fullTimeEmployee: boolean;
   yearsOfExperience?: number;
   location: string;
-  [index: string]: any;
-}
-
-// Teacher Director extendsfrom interface
-interface Director extends Teacher {
-  numberOfReports: number;
+  [key: string]: any;
 }
 
 // Director interface extending Teacher
@@ -34,4 +29,38 @@ function printTeacher({
   return `${firstName}. ${lastName}`;
 }
 
+// StudentClass implementation
+class StudentClass {
+  constructor(public firstName: string, public lastName: string) {}
+
+  workOnHomework(): string {
+    return "Currently working";
+  }
+
+  displayName(): string {
+    return this.lastName + this.firstName; // Corrected to return lastName + firstName
+  }
+}
+
+// ---------- Example Usage ----------
+
+const teacher1: Teacher = {
+  firstName: "Musa",
+  lastName: "Ogunsolu",
+  fullTimeEmployee: true,
+  location: "Nigeria",
+  contract: true,
+};
+
+const director1: Director = {
+  firstName: "Adebayo",
+  lastName: "Kalam",
+  location: "Paris",
+  fullTimeEmployee: true,
+  numberOfReports: 17,
+};
+
 console.log(printTeacher({ firstName: "John", lastName: "Doe" })); // Output: J. Doe
+const student = new StudentClass("Nuhammed", "Nusa");
+console.log(student.displayName()); // Nuhammed
+console.log(student.workOnHomework()); // Currently working
