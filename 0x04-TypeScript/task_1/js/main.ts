@@ -19,15 +19,19 @@ interface printTeacherFunction {
 }
 
 // Function implementation (must be a function declaration, not arrow)
-function printTeacher({
-  firstName,
-  lastName,
-}: {
-  firstName: string;
-  lastName: string;
-}): string {
-  return `${firstName}. ${lastName}`;
-}
+// function printTeacher({
+//   firstName,
+//   lastName,
+// }: {
+//   firstName: string;
+//   lastName: string;
+// }): string {
+//   return `${firstName}. ${lastName}`;
+// }
+
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
+  return `${firstName.charAt(0)}. ${lastName}`;
+};
 
 // StudentClass implementation
 class StudentClass {
