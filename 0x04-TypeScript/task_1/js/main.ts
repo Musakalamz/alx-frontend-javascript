@@ -22,3 +22,14 @@ interface Director extends Teacher {
 interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
+
+// Function implementation (must be a function declaration, not arrow)
+function printTeacher({
+  firstName,
+  lastName,
+}: {
+  firstName: string;
+  lastName: string;
+}): string {
+  return `${firstName}. ${lastName}`;
+}
