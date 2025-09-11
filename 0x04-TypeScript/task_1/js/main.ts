@@ -25,4 +25,4 @@ function printTeacher({
   return `${firstName}. ${lastName}`;
 }
 
-console.log(printTeacher("John", "Doe"));
+console.log(printTeacher({ firstName: "John", lastName: "Doe" }));
