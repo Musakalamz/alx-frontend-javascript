@@ -33,3 +33,5 @@ function printTeacher({
 }): string {
   return `${firstName}. ${lastName}`;
 }
+
+console.log(printTeacher({ firstName: "John", lastName: "Doe" })); // Output: J. Doe
